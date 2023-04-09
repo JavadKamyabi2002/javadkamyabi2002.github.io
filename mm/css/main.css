@@ -20,7 +20,7 @@ body{
 	color: #fff;
 }
 ::-moz-selection{
-	backface: #241c4e;
+	fallback: #241c4e;
 	color: #FFFFFF;
 }
 .navbar{
