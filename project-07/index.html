@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="innercon">
+            <div class="search">
+
+                <input type="text" name="citysearch" id="citysearch">
+                <button id="btnsearch" class="search-button">
+                    <img width="28" height="28" src="https://img.icons8.com/pastel-glyph/128/search--v2.png" alt="search--v2"/>
+                </button>
+                
+            </div>
+            <div id="info" class="information">
+                <p class="cityname"> wheather in <span id="citynamepar"></span> </p>
+                <p class="temp"><span id="citytemp"></span> C</p>
+                <div class="icon-weather">
+                    <img id="weathericon" width="50" height="50" src="https://img.icons8.com/ios/50/cloud--v1.png" alt="cloud--v1"/>
+                    <p class="ppp">cloudy</p>
+                </div>
+                <p class="humadity"><span id="humidity"></span> humadity</p>
+                <p class="wind-speed"><span id="wind"></span> wind speed </p>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
+
+<!-- 
+    suuny icon : <img width="50" height="50" src="https://img.icons8.com/ios/50/sun--v1.png" alt="sun--v1"/>
+    -----------------
+    snowy icon : 
+    <img width="100" height="100" src="https://img.icons8.com/ios/100/sleet.png" alt="sleet"/>
+-------------------
+humidity icon : 
+<img width="100" height="100" src="https://img.icons8.com/ios/100/humidity.png" alt="humidity"/>
+
+ -->
