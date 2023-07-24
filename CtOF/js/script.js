@@ -39,32 +39,45 @@ function ChangeFucntion() {
 function ConverFunction() {
     if(isNaN(input.value)){
         result.style.display='block'
-        result.innerHTML='Please Enter Valid Input'
-        result.style.color='red'
+        inp1.innerHTML=''
+        out1.innerHTML=''
+        maintext.innerHTML='Please Enter Valid Input'
+        maintext.style.color='red'
+    }
+    else if(input.value==='')
+    {
+      result.style.display='block'
+        inp1.innerHTML=''
+        out1.innerHTML=''
+        maintext.innerHTML='You Did not Enter anything '
+        maintext.style.color='white'
     }
     else {
-       
+      maintext.style.color='yellow'
+       maintext.innerHTML='°C to °F is :'
         
         if(Cdegree.innerHTML==='°C'){
             let inpc = input.value;
             let out12 = ChnageCtoF(inpc);
     
             inp1.innerHTML=inpc
-            out1.innerHTML=out12
+            out1.innerHTML=out12.toFixed(1)
             result.style.display='block'
-            pp(result.style.display)
+            pp(result.innerHTML)
         }
         else
         {   
             let inpc = input.value;
-            let out12 = parseInt(ChnageFtoC(inpc));
+            let out12 = ChnageFtoC(inpc)
+            
             inp1.innerHTML=inpc
-            out1.innerHTML=out12
+            out1.innerHTML=out12.toFixed(1)
             maintext.innerHTML='°F to °C is :'
             result.style.display='block'
             
         }
     }
+    
     
 }
 function ResetFunction(){
