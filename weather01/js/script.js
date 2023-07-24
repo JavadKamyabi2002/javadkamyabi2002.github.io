@@ -52,7 +52,6 @@ let flag = true
   btn.addEventListener("click", ChangeEVER)
   function ChangeEVER(){
     if(flag){
-      btn.setAttribute('src','')
        image.setAttribute('src','../icons8-close-50.png') 
       let  searchValue =searchBar.value
       let lowersearchValue = searchValue.toLowerCase()
@@ -78,9 +77,6 @@ let flag = true
     
     }
     else{
-      
-      btn.setAttribute('src','../icons8-close-50.png')
-    
       $.querySelector(".weather").classList.add("loading");
       image.setAttribute('src','../icons8-search-50.png')
       flag=true
