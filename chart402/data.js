@@ -773,7 +773,7 @@ export const courses = [
   },
   {
     subject: "عنوان درس ",
-    credits: "تعداد واحد ",
+    credits: " واحد ",
     prereq: "پیش نیاز ",
     hamniaz: " هم نیاز ",
     bgColor: "orange",
